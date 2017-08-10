@@ -1,0 +1,23 @@
+#! /bin/bash
+
+echo "Por: Ernesto Ulate Ramirez"
+
+#Ejercicio 1 se ejecuta con:
+#	n=3 y x=0.5 
+#	y
+#	n=10 y x=2.7
+echo " *** Ejercicio 1 ***"
+octave ejercicio1.m
+
+#Ejercicio 2 se compila
+g++ ejercicio2.cpp -o ejercicio2
+#Ejercicio 2 se ejecuta con:
+#	n = 100000000 y x = 0.00001
+./ejercicio2
+echo "------------------------------"
+
+#Ejercicio 3 se compila
+g++ ejercicio3.cpp -o ejercicio3
+#Ejercicio 3 se ejecuta con:
+#	n = 100000000 y x = 0.00001
+./ejercicio3

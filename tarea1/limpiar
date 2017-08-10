@@ -1,0 +1,5 @@
+#! /bin/bash
+
+echo "Limpiando compilados..."
+rm ejercicio2 ejercicio3
+echo "OK."

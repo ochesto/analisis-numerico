@@ -1,0 +1,10 @@
+
+Para poder ejecutar la tarea:
+	./ejecutar_tarea1
+
+Aquí se utiliza el script "ejecutar_tarea1" que contiene
+las tareas de compilación y ejecución de programas.
+
+
+Para limpiar los ejecutables
+	./limpiar

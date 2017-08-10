@@ -1,11 +1,3 @@
-#Recibe parametros del usuario
-format long
-
-#Cantidad de cifras significativas
-n = input('Ingrese la cantidad de cifras significativas: ');
-#Valor real
-x = input('Ingrese un valor real: ');
-
 #Realizar calculo con serie de Taylor
 function resultado = verifica(cifras, x);
   scarborough = 0.5 * 10^(2-cifras);
@@ -20,9 +12,10 @@ function resultado = verifica(cifras, x);
   error_relativo_aproximado = ((x^(numero_terminos))/(factorial(numero_terminos)*valor_estimado))*100;
   numero_terminos = numero_terminos + 1;
   until(error_relativo_aproximado < scarborough);
-  
+
   error_relativo_verdadero = (abs(1-(valor_estimado/valor_verdadero)))*100;
   
+  output_precision(cifras+1)
   #Muestra de resultados obtenidos
   disp('valor_estimado: ')
   disp(valor_estimado);
@@ -73,12 +66,25 @@ function comprobador = compruebaDatos(n, x)
     disp('Cantidad de cifras significativas no entera.')
     return;
   endif
-  if(!isreal(x))
-    disp('Valor real no pertenece a los numeros reales.')
+  if(!isreal(x) | x>100)
+    disp('Valor real no pertenece a los numeros reales o es mayor que 100.')
     return;
   endif
+  disp('n: ')
+  disp(n)
+  disp('x : ')
+  disp(x)
   verifica(n,x);
 endfunction
 
+
+n = 3;
+x = 0.5;
 #Inicializa el programa
 compruebaDatos(n, x)
+
+n = 10;
+x = 2.7;
+#Inicializa el programa
+compruebaDatos(n, x)
+
