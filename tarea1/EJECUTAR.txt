@@ -1,3 +1,4 @@
+Por: Ernesto Ulate Ramirez
 
 Para poder ejecutar la tarea:
 	./ejecutar_tarea1
