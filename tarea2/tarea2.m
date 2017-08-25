@@ -1,6 +1,7 @@
-#Tarea 2
+#Tarea 2 - Metodos de derivacion aproximados
 #Por: Ernesto Ulate Ramirez
 #Fecha: 24/8/17
+output_precision(15);
 
 # f(x) indicada para calcular la derivada
 global f = @(x) 0.3*x*x*x*x-0.15*x*x;

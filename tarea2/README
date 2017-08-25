@@ -1,0 +1,7 @@
+Tarea 2
+Por: Ernesto Ulate Ramírez
+
+Para ejecutar la tarea:
+	octave-cli --persist tarea2.m
+
+Posteriormente se despliega el menú con las opciones disponibles.
